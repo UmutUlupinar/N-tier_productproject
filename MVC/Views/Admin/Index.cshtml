@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Login Page</h1>
+
+<div>@ViewBag.LoginError</div>
+ <div class="tab-pane active" id="tab5">
+	 <form asp-controller="Admin" asp-action="Index" >
+	    <div class="form-group">
+			   <label>Kullanıcı Adı</label> <input name="UserName" class="form-control" placeholder="Kullanıcı Adı Giriniz" type="text"><br />
+			   <label>Şifre</label> <input name="UserPassword" class="form-control" placeholder="Şifrenizi giriniz" type="password"><br />
+		 </div>
+  <br />
+		 <div class="col">
+				<input type="Submit"  class="btn btn-primary btn-block" value="GİRİŞ"/>
+		 </div>
+</form>
+</div>

@@ -1,0 +1,22 @@
+﻿@using Core.Models.ProductSide
+@model List<Product> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered"> 
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+        </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td> 
+        </tr>
+    }
+    
+</table>
