@@ -25,8 +25,29 @@ namespace DataAccess.Seed
                     ID = 1,
                     Name = "pen",
                     CategoryID = _ids[0],
-                }
-                
+                },
+
+                  new Product
+                  {
+                      ID = 2,
+                      Name = "eraser",
+                      CategoryID = _ids[0],
+                  },
+
+                    new Product
+                    {
+                        ID = 3,
+                        Name = "sweatshirt",
+                        CategoryID = _ids[1],
+                    },
+
+                      new Product
+                      {
+                          ID = 4,
+                          Name = "jean",
+                          CategoryID = _ids[2],
+                      }
+
                 );
         }
     }

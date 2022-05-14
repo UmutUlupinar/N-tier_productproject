@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Core.Models.ProductSide
 {
-    internal class Order
+    public class Order:BaseEntity
     {
+        public int Price { get; set; }
+
     }
 }

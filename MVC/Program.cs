@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("conn");
+var connectionString = builder.Configuration.GetConnectionString("SqlConStr");
 builder.Services.AddDbContext<Context>(options => options.UseSqlServer(connectionString));
 
 
