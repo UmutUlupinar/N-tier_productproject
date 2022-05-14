@@ -13,4 +13,6 @@ namespace Core.Models.ProductSide
         public virtual ICollection<Product> Products { get; set; }
 
     }
+
+    
 }

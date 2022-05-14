@@ -50,9 +50,7 @@ namespace MVC.Controllers
                         break;
                 }
             }
-           
-
-            return RedirectToAction("Index", "Panel");
+           //role gore yonlendirme yapıldıktan sonra oturum kontrolunden gecerse sayfalar gosterilir.
 
         }
 

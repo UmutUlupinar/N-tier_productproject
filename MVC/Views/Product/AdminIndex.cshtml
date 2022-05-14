@@ -1,7 +1,28 @@
-﻿
+﻿@using Core.Models.ProductSide
+@model List<Product>
 @{
     ViewData["Title"] = "AdminIndex";
 }
 
 <h1>Admin Index</h1>
 
+<table class="table table-bordered"> 
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>#</th>
+            <th>#</th>
+        </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Category.Name</td>
+            <td><button class="btn-primary">Güncelle</button></td>
+            <td><button class="btn-primary">Sil</button></td>
+        </tr>
+    }
+    
+</table>

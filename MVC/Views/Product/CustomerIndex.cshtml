@@ -1,0 +1,24 @@
+﻿@using Core.Models.ProductSide
+@model List<Product>
+@{
+    ViewData["Title"] = "CustomerIndex";
+}
+
+<h1>Customer Index</h1>
+
+<table class="table table-bordered"> 
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>#</th>
+        </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td> 
+               <td><button class="btn-primary">siparis ver</button></td>
+        </tr>
+    }
+    
+</table>
