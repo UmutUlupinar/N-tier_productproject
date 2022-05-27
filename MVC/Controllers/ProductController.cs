@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MVC.Controllers
 {
+    [Authorize](Roles="Admin")]
     public class ProductController : Controller
     {
         private IProductService _proService;

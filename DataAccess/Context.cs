@@ -39,12 +39,12 @@ namespace DataAccess
             
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-            
+
             //------------------seed fake data-------------------------//           
-            //modelBuilder.ApplyConfiguration(new ProductSeed(new int[] { 1, 2 }));
-            //modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1, 2 }));
-            //modelBuilder.ApplyConfiguration(new RoleSeed(new int[] { 1, 2 }));
-            //modelBuilder.ApplyConfiguration(new UserSeed(new int[] { 1, 2 }));
+            modelBuilder.ApplyConfiguration(new ProductSeed(new int[] { 1, 2 }));
+            modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1, 2 }));
+            modelBuilder.ApplyConfiguration(new RoleSeed(new int[] { 1, 2 }));
+            modelBuilder.ApplyConfiguration(new UserSeed(new int[] { 1, 2 }));
 
 
 
